@@ -64,9 +64,50 @@
             <p><a href="bajaSuscripcion.php" class="red-text">DAR DE BAJA MI SUSCRIPCIÓN</a></p>
           </p>
         </div>
-  
-</head>
-<body>
-  
+      
+      </form>
+     
+      <?php
+          if(isset($_POST['suscribirme'])) {
+
+            include('server/inc/conexion.php');
+            include('server/inc/modal.php');
+
+            $nombre = htmlspecialchars($_POST['nombre']);
+            $apellidos = htmlspecialchars($_POST['apellidos']);
+            $email = htmlspecialchars($_POST['email']);
+
+            // Seguridad nivel esencial
+            $verificarCorreo = mysqli_query($conexion, "SELECT * FROM suscriptor WHERE email = '$email' ");
+            if (mysqli_num_rows($verificarCorreo) > 0) {
+              toast("El correo que ingresaste ya está registrado");
+              die();
+            }
+
+            $sql = "INSERT INTO `suscriptor`(`email`, `nombre`, `apellidos`, `fecha_registro`) VALUES ('$email','$nombre','$apellidos',NOW())";
+
+            $consulta = mysqli_query($conexion, $sql);
+
+            if($consulta > 0) {
+              modal("¡Te suscribiste a nuestro boletín!", "Recibirás en tu correo electrónico las novedades, recompensas y noticias que Fora tiene preparado para ti.", "CERRAR", "/fora");
+            } else {
+               modal("Algo salió mal", "No hemos podido registrarte", "CERRAR", "/fora");
+            }
+
+          }
+      ?>
+
+
+
+    </div>
+  </div>
+
+<!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
 </body>
 </html>
