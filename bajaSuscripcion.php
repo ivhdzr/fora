@@ -30,6 +30,46 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger blue-text"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <div class="breadcr">
+    <a href="/fora">Inicio</a> / <a href="suscripcion.php">Suscripción al boletín</a> / <a href="#" class="under-text">Dar de baja</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h4 class="header center">Dar de baja la suscripción al boletín</h4>
+      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+        <div class="col s12 center">
+         ¿Por qué quieres dar de baja tu suscripción?
+          <p>
+            <ul class="collection">
+              <li class="collection-item">
+                <label>
+                  <input required class="with-gap" name="motivo" value="No solicité la inscripción" type="radio"  />
+                  <span>No solicité la suscripción</span>
+                </label>
+              </li>
+              <li class="collection-item">
+                <label>
+                  <input required class="with-gap" name="motivo" value="No me interesa la información" type="radio"  />
+                  <span>No me interesa la información</span>
+                </label>
+              </li>
+            </ul>
+          
+          </p>
+        </div>
+      
+      <div class="col s12">
+          <label for="nombre">Correo electrónico:</label>
+          <input autofocus type="email" name="email" id="email" class="validate" maxlength="40" pattern="[A-Za-z]{4-40}" required>
+        </div>
+        <div class="col s12 center">
+          <p>
+            <button type="submit" name="dardebaja" class="btn waves-effect waves-light blue lighten-1">Darme de baja</button>
+          </p>
+        </div>
+        
+      </form>
   
 </body>
 </html>
