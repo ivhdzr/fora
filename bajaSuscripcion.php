@@ -70,6 +70,50 @@
         </div>
         
       </form>
-  
+    
+    <?php
+          if(isset($_POST['dardebaja'])) {
+
+            include('server/inc/conexion.php');
+            include('server/inc/modal.php');
+
+            $motivo = htmlspecialchars($_POST['motivo']);
+            $email = htmlspecialchars($_POST['email']);
+
+            // Seguridad nivel esencial
+            $verificarCorreo = mysqli_query($conexion, "SELECT * FROM suscriptor WHERE email = '$email' ");
+            if (mysqli_num_rows($verificarCorreo) > 0) {
+
+              $sql = "CALL dardebaja('$motivo', '$email', @res)";
+
+              $consulta = mysqli_query($conexion, $sql);
+
+              if($consulta > 0) {
+                modal("Te diste de baja", "Ya no recibirás novedades en tu correo electrónico", "CERRAR", "/fora");
+              } else {
+               modal("Algo salió mal", "No hemos podido darte de baja", "CERRAR", "/fora");
+             }
+              
+            } else {
+              toast("El correo que ingresaste no está registrado");
+              die();
+            }
+
+            
+
+          }
+      ?>
+
+
+    </div>
+  </div>
+
+<!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
 </body>
 </html>
