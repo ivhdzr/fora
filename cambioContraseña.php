@@ -1,4 +1,5 @@
 <?php
+
   session_start();
   include('server/inc/priv.php');
   include('server/inc/conexion.php');
