@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>FORA</title>
+  <meta name="author" content="Equipo de desarrollo FORA"/>
+  <meta name="description" content="FORA. Soluciones de software eficientes e innovadores.">
+  <title>Fora</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,17 +13,25 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <!-- SECCIÓN DE NAVEGACIÓN -->
+
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo"><img src="img/logo_fora.png" alt="Logo fora" class="nav-img"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#conocenos" class="blue-text">Conócenos</a></li>
+        <li><a href="#productos" class="blue-text">Productos</a></li>
+        <li><a href="#contactanos" class="blue-text">Contáctanos</a></li>
+        <li><a href="suscripcion.php" class="btn waves-effect waves-light blue lighten-1">Suscríbete a nuestro boletín</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#conocenos">Conócenos</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contactanos">Contáctanos</a></li>
+        <li><a href="suscripcion.php">Suscríbete a nuestro boletín</a></li>
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger blue-text"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
@@ -29,52 +39,60 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Fora</h1>
-        <div class="row center">
+        <h2 class="header center white-text text-lighten-2">Soluciones de software eficientes</h2>
 
-          <h5 class="header col s12 light">A modern copia de rama</h5>
-
-        </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <h5 class="header col s12 light">Comprometidos con la satisfacción del cliente</h5>
         </div>
+        <!--<div class="row center">
+          <a href="#conocenos" class="btn-large waves-effect waves-light blue lighten-1">Conócenos</a>
+        </div>-->
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <!-- PARALLAX 1 -->
+    <div class="parallax">
+      <img src="img/bg/background1.jpg" alt="Unsplashed background img 1">
+    </div>
   </div>
 
+  <!-- SECCIÓN DE CONÓCENOS -->
 
-  <div class="container">
+  <div class="container" id="conocenos">
     <div class="section">
-
+      <h3 class="center">Conócenos</h3>
       <!--   Icon Section   -->
+
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center blue-text"><i class="material-icons">flag</i></h2>
+            <h5 class="center">Misión</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">Nuestra misión es diseñar y brindar soluciones de software eficientes que faciliten su uso al cliente sin restricciones de información.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center blue-text"><i class="material-icons">auto_awesome</i></h2>
+            <h5 class="center">Visión</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">Nuestra visión es hacer de FORA una de las empresas con mayor influencia en productos de software eficientes.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center blue-text"><i class="material-icons">sentiment_very_satisfied</i></h2>
+            <h5 class="center">Valores</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <ul class="light">
+              <li>- Honestidad. La transparencia, sinceridad y franquesa.</li>
+              <li>- Calidad. Búsqueda de la excelencia.</li>
+              <li>- Pasión. Comprometidos con lo que hacemos.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -82,76 +100,245 @@
     </div>
   </div>
 
+  <!-- PARALLAX 2 -->
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light"><i class="material-icons big">integration_instructions</i><br>Somos expertos en lo que hacemos</h5>
+          <p>Con un equipo experimentado y confiable</p>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="img/bg/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
+
+
+
+  <!-- SECCIÓN DE EQUIPO DE TRABAJO -->
 
   <div class="container">
     <div class="section">
-
+      <h3 class="center">Nuestro equipo de trabajo</h3>
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>CONTACTANOS</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
 
+        <div class="col s12 m6">
+
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle red darken-1">person</i>
+              <span class="title">Alexis Ramírez Varillas</span>
+              <p>Tester de software
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle teal darken-1">person</i>
+              <span class="title">Andrea De La Luz Ramos Nava</span>
+              <p>Desarrollador web
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle indigo lighten-1">person</i>
+              <span class="title">Fernando Uriza Vallejo</span>
+              <p>Desarrollador multiplataforma
+              </p>
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="col s12 m6">
+
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle green darken-3">person</i>
+              <span class="title">Iván Hernández Rojas</span>
+              <p>Documentador de software
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle amber darken-4">person</i>
+              <span class="title">Jesús Rivera Jácome</span>
+              <p>Gestor de desarrollo
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle brown darken-3">person</i>
+              <span class="title">Milton Pérez Martínez</span>
+              <p>Analista de base de datos
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
     </div>
   </div>
 
+   <!-- PARALLAX 3 -->
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="productos">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light"><i class="material-icons big">home_repair_service</i><br>Productos y servicios</h5>
+          <p>Con la infraestructura necesaria para satisfacer tus necesidades personales o empresariales</p>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="img/bg/background3.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <footer class="page-footer teal">
+  
+  <!-- SECCIÓN DE PRODUCTOS Y SERVICIOS -->
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+           <div class="card">
+            <div class="card-image waves-effect waves-block waves-light" style="width: 100px;margin: auto;padding-top: 1em;">
+              <img class="activator" src="img/app.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Desarrollo de aplicaciones<p><i class="material-icons right">more_horiz</i></p></span>
+              
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Desarrollo de aplicaciones <i class="material-icons right">close</i></span>
+              <p>Nuestro equipo de programadores de aplicaciones puede crear aplicaciones excepcionales para una amplia gama de dispositivos, incluidos computadoras de escritorio, dispositivos móviles y tabletas. Con la ayuda de nuestra experiencia en la industria, podemos brindar al usuario la mejor experiencia de aplicación a través de múltiples canales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+           <div class="card">
+            <div class="card-image waves-effect waves-block waves-light" style="width: 100px;margin: auto;padding-top: 1em;">
+              <img class="activator" src="img/dev.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Desarrollo bajo demanda<p><i class="material-icons right">more_horiz</i></p></span>
+              
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Desarrolladores bajo demanda <i class="material-icons right">close</i></span>
+              <p>Estamos orgullosos de emplear a más de 6 desarrolladores internos y creadores de software personalizado con una variedad de experiencia en desarrollo de plataformas para una variedad de industrias. Esto nos permite ser tu única parada, eliminando las molestias de administrar múltiples proveedores, logística y embotellamientos tecnológicos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+           <div class="card">
+            <div class="card-image waves-effect waves-block waves-light" style="width: 100px;margin: auto;padding-top: 1em;">
+              <img class="activator" src="img/serv.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Soporte técnico de producto<p><i class="material-icons right">more_horiz</i></p></span>
+              
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Soporte de producto <i class="material-icons right">close</i></span>
+              <p>Nos asociamos con otros líderes de la industria para implementar soluciones de desarrollo de software personalizado de calidad para nuestros clientes. Nuestros desarrolladores certificados son capaces de implementar software nuevo, integrándolo sin problemas a su organización y brindando soporte para futuras actualizaciones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARALLAX 4 -->
+
+  <div class="parallax-container valign-wrapper" id="contactanos">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"><i class="material-icons big">support_agent</i><br>Contáctanos</h5>
+          <p>Sé parte de la comunidad de clientes satisfechos con nuestro trabajo</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/bg/background4.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+ <!-- SECCIÓN DE CONTÁCTANOS -->
+
+  <div class="container">
+    <div class="section">
+    
+      <!--   Icon Section   -->
+
+      <div class="row">
+        <div class="col s12 m6">
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle light-blue darken-4">location_on</i>
+              <span class="title">Ubicación</span>
+              <p>Camino, Real San Mateo S/N, 74169 Santa Ana Xalmimilulco, Pue.
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle light-blue darken-4">phone</i>
+              <span class="title">Télefono</span>
+              <p><a href="https://wa.me/+522481089918">248 108 9918</a><br><a href="https://wa.me/+522482083651">248 208 3651</a>
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle light-blue darken-4">email</i>
+              <span class="title">Correo electrónico</span>
+              <p><a href="mailto:empresafora@gmail.com?Subject=¡Hola, requiero información!">empresafora@gmail.com</a><br>
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle light-blue darken-4">schedule</i>
+              <span class="title">Horarios de atención</span>
+              <p>Lunes a viernes 9:00 am - 5:00 pm<br>
+                Sábados 9:00 am - 2:00 pm
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col s12 m6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.686401073127!2d-98.39301558562121!3d19.20889475277455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd1f35ec2d3fb%3A0xee133cee4b1c87ef!2sUniversidad%20Tecnol%C3%B3gica%20de%20Huejotzingo!5e0!3m2!1ses!2smx!4v1664587271290!5m2!1ses!2smx" class="imap" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Fora Software</h5>
+          <p class="grey-text text-lighten-4">Somos un equipo de profesionales dedicados a ofrecerte las mejores soluciones e innovaciones en software.</p>
 
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Síguenos</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Tiktok</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Instagram</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5 class="white-text">Legal</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Términos y condiciones</a></li>
+            <li><a class="white-text" href="#!">Política de privacidad</a></li>
+            <br>
+            <li><a href="admin.php" class="white-text" style="text-decoration: underline;">Administrar</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      © FORA Software 2022. Todos los derechos reservados. Desarrollado con la tecnología de <a class="white-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
@@ -161,6 +348,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    M.AutoInit();
+  </script>
   </body>
 </html>
